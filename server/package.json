@@ -1,0 +1,16 @@
+{
+  "name": "zoltio-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "avsc": "^5.0.1",
+    "p2": "^0.7.1",
+    "ws": "^2.3.1"
+  }
+}
