@@ -2,7 +2,7 @@
 
 ## Input
 
-Name/start
+Name/end/start
   string
 
 Mouse
@@ -13,10 +13,6 @@ Special
 
 ## Output
 
-map
-  array
-    pipe placemet
-
 Id
   YourId
 
@@ -25,15 +21,28 @@ Names
     id
     name
 
-Bird
-  array
-    id
-    x
-    y
-    rotation
-
 Leaderboard
   array
     id
     place
     score
+
+pipe
+  x
+  y
+
+Bird
+  array
+    id
+    x
+    y
+
+## Server Loop
+
+loop birds
+  update position
+  check pipe collision
+
+loop players
+  send birds within proximity of player
+  send pipe if pipes sent < pipes completed + 2
