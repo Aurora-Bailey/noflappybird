@@ -2,47 +2,51 @@
 
 ## Input
 
-1. Name/end/start
-    * string
+1. Name/start
+    * name [string]
 
 2. Settings
-    * set
-    * value
+    * setting [int]
+    * value [int]
 
 3. Mouse
-    * vertical position 0% - 100%
+    * vertical position [int]
 
 4. Special
-    * On/Off
+    * on/off [int]
 
 ## Output
 
 1. Id
-    * YourId
+    * your id [int]
 
 2. Names
-    * array
-       * id
-       * name
+    * array [arr]
+       * id [int]
+       * name [string]
 
 3. Dead
-    * Final score
+    * final score [int]
 
-4. Leaderboard
-    * array
-       * id
-       * place
-       * score
+4. PastPipe
+    * pipe number [int]
 
-5. pipe
-    * x
-    * y
+5. Leaderboard
+    * array [arr]
+       * id [int]
+       * place [int]
+       * score [int]
 
-6. Bird
-    * array
-       * id
-       * x
-       * y
+6. pipe
+    * type [int]
+    * x [int]
+    * y [int]
+
+7. Bird
+    * array [arr]
+       * id [int]
+       * x [int]
+       * y [int]
 
 ## Server Loop
 
