@@ -2,47 +2,55 @@
 
 ## Input
 
-Name/end/start
-  string
+1. Name/end/start
+⋅⋅* string
 
-Mouse
-  vertical position 0% - 100%
+2. Settings
+⋅⋅* set
+⋅⋅* value
 
-Special
-  On/Off
+3. Mouse
+⋅⋅* vertical position 0% - 100%
+
+4. Special
+⋅⋅* On/Off
 
 ## Output
 
-Id
-  YourId
+1. Id
+⋅⋅* YourId
 
-Names
-  array
-    id
-    name
+2. Names
+⋅⋅* array
+⋅⋅* id
+⋅⋅* name
 
-Leaderboard
-  array
-    id
-    place
-    score
+3. Dead
+⋅⋅* Final score
 
-pipe
-  x
-  y
+4. Leaderboard
+⋅⋅* array
+⋅⋅* id
+⋅⋅* place
+⋅⋅* score
 
-Bird
-  array
-    id
-    x
-    y
+5. pipe
+⋅⋅* x
+⋅⋅* y
+
+6. Bird
+⋅⋅* array
+⋅⋅* id
+⋅⋅* x
+⋅⋅* y
 
 ## Server Loop
 
-loop birds
-  update position
-  check pipe collision
+1. loop birds
+⋅⋅* update position
+⋅⋅* check pipe collision
 
-loop players
-  send birds within proximity of player
-  send pipe if pipes sent < pipes completed + 2
+2. loop players
+⋅⋅* send birds within proximity of player
+⋅⋅* send pipe if pipes sent < pipes completed + 2
+⋅⋅* 1/s send Leaderboard + your score
